@@ -1,3 +1,7 @@
+---
+layout: mylayout
+--- 
+
 ## Hola, Amigos!
 
 
