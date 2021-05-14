@@ -2,8 +2,6 @@
 layout: mylayout
 --- 
 
-## Hola, Amigos!
+<b>Hallo, ich heiße Devansh!</b>
 
-
-Hey, this is where I tell my friends too much about me!
-
+This is where I tell my friends too much about me!
