@@ -5,24 +5,28 @@
 }
 
 main {
-    /* margin-left: 8%; */
-    width: 100%;
     height: 100vh;
     position: relative;
+    width: auto;
     background: linear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240));
 }
 
+header-box {
+    display: flex;
+    height: auto;
+    
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 .header {
-    position: fixed;
-    top: 0%;
-    left: 40%;
-    margin: 1rem;
-    padding: 1rem;
-    /* width: 18vw;
-    height: 5vh; */
+    width: minmax(80px ,1fr);
     border-radius: 2rem;
-    background: linear-gradient(to left bottom, rgba(238, 238, 238, 0.583), rgb(204, 204, 203, 0.8));   
+    background: linear-gradient(to left bottom, rgba(238, 238, 238, 0.583), rgb(204, 204, 203, 0.8));
+    padding: 1rem;
+    margin: 10px;
 }
 
 .header h1{
@@ -30,12 +34,15 @@ main {
 }
 
 .avatar {
-    position: absolute;
-    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 .avatar img{
-    width: 10rem;
     border-radius: 50%;
+    max-width: 40%;
+    height: auto;
 }
 
 
@@ -49,32 +56,53 @@ main {
     border-radius: 2rem;
     background: linear-gradient(to left bottom, rgba(238, 238, 238, 0.583), rgb(204, 204, 203, 0.8));
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    gap: 1rem;
 
+    grid-template-columns: auto;
+
+}
+
+.header-card {
+    grid-column: span 2 / auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.image img{
+    margin: 10px;
+    max-width: 40%;
+    height: auto;
 }
 
 /* Navigation bar */
 
 .navbar {
-    width: 5rem;
-    height: 100vh;
+    height: auto;
+    width: auto;
     overflow: auto;
     position: fixed;
     left: 0%;
-    background: linear-gradient(to right top, rgba(83, 146, 146, 0.3), rgba(80, 165, 164, 0.5));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border-radius: 2rem;
     transition: all 1s;
 
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 80px));
+
+    /* background: linear-gradient(to right top, rgba(83, 146, 146, 0.3), rgba(80, 165, 164, 0.5)); */
 }
 
-.navbar:hover {
-    display: flex;
+div.content {
+    margin-left: 0;
 }
 
 .navbar-list {
@@ -105,26 +133,6 @@ main {
     text-decoration: underline;
 }
   
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-    .navbar {
-      width: 100%;
-      height: auto;
-      position: relative;
-}
-
-.navbar a {float: left;}
-    div.content {margin-left: 0;}
-}
-  
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-    .navbar a {
-      text-align: center;
-      float: none;
-    }
-}
-
 .footer {
     background: linear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240));
     display: flex;
