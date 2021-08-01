@@ -133,11 +133,29 @@ div.content {
     text-decoration: underline;
 }
   
+.footer-box {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    width: auto;
+    height: auto;
+    /* background: l
+    inear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240)); */
+}
 .footer {
-    background: linear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240));
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.footer img{
+    /* padding: 1rem; */
+    margin: 10px;
+    max-width: 25%;
+    height: auto;
 }
 
 ::-webkit-scrollbar {
