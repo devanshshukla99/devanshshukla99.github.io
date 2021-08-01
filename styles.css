@@ -134,15 +134,14 @@ div.content {
 }
   
 .footer-box {
-    align-self: flex-end;
     position: absolute;
     bottom: 0%;
     left: 40%;
     width: auto;
     height: auto;
-    /* background: l
-    inear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240)); */
+    /* background: linear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240)); */
 }
+
 .footer {
     display: flex;
     align-items: center;
