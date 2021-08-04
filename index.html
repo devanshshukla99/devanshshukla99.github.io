@@ -5,26 +5,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     </head>
     <body>
         <main>
-            <div class="navbar">
+            <div class="sidebarbutton">
+                <button id="sidebarbtn" class="sidebarbtn" onclick="sidebar()"><img src="assets/menu-line.png" alt="Menu"></button>
+            </div>
+            <div class="sidebar">
+                <div class="sidebarbutton2">
+                    <button id="sidebarbtn2" class="sidebarbtn" onclick="sidebar()"><img src="assets/menu-line.png" alt="Menu"></button>
+                </div>
                 <div class="navbar-items">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <div class="link">
-                                <a href="#">Home</a>
-                            </div>
+                            <a href="#">
+                                <img src="assets/home-fill.png" alt="">
+                                Home
+                            </a>
                         </li>
                         <li class="navbar-item">
-                            <div class="link">
-                                <a href="contact.html">Contact</a>
-                            </div>
+                            <a href="contact.html">
+                                <img src="assets/contacts-fill.png" alt="">
+                                Contact
+                            </a>
                         </li>
                         <li class="navbar-item">
-                            <div class="link">
-                                <a href="about.html">About</a>
-                            </div>
+                            <img src="assets/contacts-fill.png" alt="">
+                            <a href="about.html">About</a>
                         </li>
                     </ul>
                 </div>

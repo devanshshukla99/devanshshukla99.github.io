@@ -83,56 +83,83 @@ header-box {
     height: auto;
 }
 
-/* Navigation bar */
-
-.navbar {
-    height: auto;
-    width: auto;
-    overflow: auto;
-    position: fixed;
-    left: 0%;
-    border-radius: 2rem;
-    transition: all 1s;
-
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 80px));
-
-    /* background: linear-gradient(to right top, rgba(83, 146, 146, 0.3), rgba(80, 165, 164, 0.5)); */
-}
 
 div.content {
     margin-left: 0;
 }
+/* Navigation bar */
 
-.navbar-list {
-    list-style-type: none;
-    margin-left: 1rem;
+.sidebar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    background: linear-gradient(to left bottom, rgba(238, 238, 238, 0.583), rgb(204, 204, 203, 0.8));
+    padding-right: 30px;
+    animation: all 4s linear;
+    display: none;
 }
 
+.sidebarbutton {
+    position: absolute;
+    /* display: none; */
+    top: 16px;
+    left: 1%;
+    /* transform: translateX(-50%); */
+    animation: all 4s linear;
+}
+.sidebarbutton2 {
+    position: absolute;
+    top: 16px;
+    right: 0%;
+    transform: translateX(-50%);
+}
+.sidebarbutton img {
+    height: 25px;
+    padding-bottom: 1rem;
+}
+#sidebarbtn, #sidebarbtn2 {
+    height: auto;
+    background: none;
+}
 
-.navbar-item {
+.sidebar img {
+    height: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+.sidebar .navbar-item {
+    font-size: 18px;
     width: 100%;
     margin-top: 1rem;
     padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
 }
-
-.link a {
+.sidebar a {
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
-  
-  /* Active/current link */
-.link a.active {
+
+.sidebar .navbar-list{
+    padding-top: 1rem;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+/* Active/current link */
+.sidebar a.active {
     background-color: rgb(0, 102, 180, 0.5);
 }
   
   /* Links on mouse-over */
-.navbar a:hover:not(.active) {
+.sidebar a:hover:not(.active) {
     text-decoration: underline;
-}
-  
+} 
+
+
+/* Footer */
 .footer-box {
     position: absolute;
     bottom: 0%;
@@ -157,6 +184,7 @@ div.content {
     height: auto;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 1vh;
     background: linear-gradient(to left top, rgba(0,150,255), rgba(0,200,240));

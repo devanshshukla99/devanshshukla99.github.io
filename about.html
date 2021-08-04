@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <main>
-        <div class="navbar">
-            <div class="navbar-items">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <div class="link">
-                            <a href="index.html">Home</a>
-                        </div>
-                    </li>
-                    <li class="navbar-item">
-                        <div class="link">
-                            <a href="contact.html">Contact</a>
-                        </div>
-                    </li>
-                    <li class="navbar-item">
-                        <div class="link">
-                            <a href="about.html">About</a>
-                        </div>
-                    </li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="sidebarbutton">
+                <button id="sidebarbtn" class="sidebarbtn" onclick="sidebar()"><img src="assets/menu-line.png" alt="Menu"></button>
             </div>
-        </div>
-        <header-box>
-            <div class="header">
-                <h1>About</h1>
+            <div class="sidebar">
+                <div class="sidebarbutton2">
+                    <button id="sidebarbtn2" class="sidebarbtn" onclick="sidebar()"><img src="assets/menu-line.png" alt="Menu"></button>
+                </div>
+                <div class="navbar-items">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="index.html">
+                                <img src="assets/home-fill.png" alt="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="contact.html">
+                                <img src="assets/contacts-fill.png" alt="">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">
+                                <img src="assets/contacts-fill.png" alt="">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header-box>
-        <div class="content">
-            <div class="card">Hallo!</div>
-        </div>
-        <div class="footer-box">
-            <div class="footer">
-                <p>devanshshukla99</p>
-                <a href="https://www.github.com/devanshshukla99"><img src="assets/GitHub-Mark-120px-plus.png" alt="github.com/devanshshukla99"></a>
+            <header-box>
+                <div class="header">
+                    <h1>About</h1>
+                </div>
+            </header-box>
+            <div class="content">
+                <div class="card">Hallo!</div>
             </div>
-        </div>
-    </main>
-</body>
+            <div class="footer-box">
+                <div class="footer">
+                    <p>devanshshukla99</p>
+                    <a href="https://www.github.com/devanshshukla99"><img src="assets/GitHub-Mark-120px-plus.png" alt="github.com/devanshshukla99"></a>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
