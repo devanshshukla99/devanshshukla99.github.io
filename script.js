@@ -1,13 +1,12 @@
 function sidebar(){
-    console.log(document.querySelector("#sidebarbtn").className)
     if(document.querySelector("#sidebarbtn").className === "sidebarbtn active") {
         document.querySelector("#sidebarbtn").className = "sidebarbtn";
-        document.querySelector(".sidebar").style.display = "none";
-        document.querySelector("#sidebarbtn").style.display = "";
+        document.querySelector("#sbar").style.transform = "translateX(-100%)"
+        document.querySelector("#sidebarbtn").style.transform = "translateX(200%)"
     }
     else {
         document.querySelector("#sidebarbtn").className += " active";
-        document.querySelector(".sidebar").style.display = "flex";
-        document.querySelector("#sidebarbtn").style.display = "none";
+        document.querySelector("#sidebarbtn").style.transform = "translateX(0%)"
+        document.querySelector("#sbar").style.transform = "translateX(0%)"
     }
 }

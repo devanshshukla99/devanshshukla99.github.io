@@ -95,41 +95,37 @@ div.content {
     left: 0%;
     height: 100%;
     background: linear-gradient(to left bottom, rgba(238, 238, 238, 0.583), rgb(204, 204, 203, 0.8));
+    border-radius: 12px;
     padding-right: 30px;
-    animation: all 4s linear;
-    display: none;
+    transition: all 0.4s ease;
+    transform: translateX(-100%);
+    /* display: none; */
 }
 
-.sidebarbutton {
-    position: absolute;
-    /* display: none; */
-    top: 16px;
-    left: 1%;
-    /* transform: translateX(-50%); */
-    animation: all 4s linear;
-}
-.sidebarbutton2 {
+.sidebar .sidebarbutton {
     position: absolute;
     top: 16px;
     right: 0%;
     transform: translateX(-50%);
 }
-.sidebarbutton img {
+.sidebar .sidebarbutton img {
     height: 25px;
     padding-bottom: 1rem;
 }
-#sidebarbtn, #sidebarbtn2 {
+#sidebarbtn {
     height: auto;
     background: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    transform: translateX(200%)
 }
-
-.sidebar img {
-    height: 20px;
+.sidebar .navbar-items img {
+    height: 15px;
     padding: 0%;
     margin: 0%;
 }
 .sidebar .navbar-item {
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     margin-top: 1rem;
     padding-top: 1rem;
@@ -141,7 +137,6 @@ div.content {
     font-weight: bold;
     text-decoration: none;
 }
-
 .sidebar .navbar-list{
     padding-top: 1rem;
     list-style-type: none;
