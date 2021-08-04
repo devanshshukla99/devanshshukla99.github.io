@@ -14,9 +14,7 @@ main {
 header-box {
     display: flex;
     height: auto;
-    
     padding: 1rem;
-
     align-items: center;
     justify-content: space-evenly;
 }
@@ -38,27 +36,29 @@ header-box {
     align-items: center;
     justify-content: space-around;
 }
-
 .avatar img{
     border-radius: 50%;
     max-width: 40%;
     height: auto;
 }
 
+.content-container {
+    width: 100%;
+    height: auto;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
 .content {
-    position: absolute;
-    top: 25%;
-    left: 8%;
     width: 80vw;
     height: 50vh;
     margin: 2rem;
     border-radius: 2rem;
     background: linear-gradient(to left bottom, rgba(238, 238, 238, 0.583), rgb(204, 204, 203, 0.8));
-
     display: grid;
     gap: 1rem;
-
     grid-template-columns: auto;
 
 }
@@ -69,7 +69,6 @@ header-box {
     align-items: center;
     justify-content: center;
 }
-
 .card {
     display: flex;
     align-items: center;
@@ -83,10 +82,6 @@ header-box {
     height: auto;
 }
 
-
-div.content {
-    margin-left: 0;
-}
 /* Navigation bar */
 
 .sidebar {
@@ -156,9 +151,9 @@ div.content {
 
 /* Footer */
 .footer-box {
-    position: absolute;
+    /* position: fixed;
     bottom: 0%;
-    left: 40%;
+    left: 50%; */
     width: auto;
     height: auto;
     /* background: linear-gradient(to left bottom, rgba(0,150,255), rgba(0,200,240)); */
