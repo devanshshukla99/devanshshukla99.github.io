@@ -19,7 +19,7 @@ header = `
     </label>
 </div>
 <header>
-    <img src="assets/avatar.png" width="60%" height="60%" style="border-radius: 50%;">
+    <img src="assets/avatar.png" min-width="50%" max-width="100%" height="auto" style="border-radius: 50%;">
     <br>
     <a href="index.html">Home</a>
     <br>
