@@ -19,22 +19,38 @@ header = `
     </label>
 </div>
 <header>
-    <img src="assets/avatar.png" min-width="50%" max-width="100%" height="auto" style="border-radius: 50%;">
+    <div class="avatar" style="max-width: 60%;">
+        <img src="assets/avatar.png" min-width="10%" style="border-radius: 50%;">
+    </div>
     <br>
-    <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
     <br>
-    <a href="about.html">About</a>
+        <a href="about.html">About</a>
     <br>
-    <a href="blogs.html">Blogs</a>
+        <a href="blogs.html">Blogs</a>
     <br>
-    <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
     <br>
 </header>`;
 
+dark_slider = `
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+    </label>
+</div>`;
 
 window.onload = function (){
     var head = document.querySelector("header")
-    head.innerHTML = header
+    if (head) {
+        head.innerHTML = header
+    }
+    var slider = document.querySelector("dark_slider")
+    if (slider){
+        slider.innerHTML = dark_slider
+    }
+
     var toggleSwitch = document.querySelector(".theme-switch input")
     function switchTheme(e) {
         if (e.target.checked) {

@@ -1,6 +1,7 @@
 :root {
   --bg-color: #000;
-  --heading-color: #222;
+  --heading-color: #39c;
+  --text-color: rgb(29, 123, 170);
 }
 
 * {
@@ -72,7 +73,7 @@ body {
   background-color: var(--bg-color);
   padding:50px;
   font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color:#595959;
+  color: var(--text-color);
   font-weight:400;
   display: flex;
   flex-direction: column;
@@ -102,12 +103,10 @@ h1 {
 }
 
 h2 {
-  color:#393939;
   font-weight: 500;
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
   font-weight: 500;
 }
 
