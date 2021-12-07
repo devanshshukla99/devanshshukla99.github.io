@@ -33,6 +33,12 @@ header = `
     <br>
 </header>`;
 
+footer = `
+<div class="footer">
+    <p><small>adapted from the <a href="https://github.com/orderedlist/minimal">minimal theme</a>
+    </small></p>
+</div>`;
+
 dark_slider = `
 <div class="theme-switch-wrapper">
     <label class="theme-switch" for="checkbox">
