@@ -46,18 +46,29 @@ window.onload = function (){
     if (head) {
         head.innerHTML = header
     }
+    var foot = document.querySelector("footer")
+    if (foot) {
+        foot.innerHTML = footer
+    }
     var slider = document.querySelector("dark_slider")
     if (slider){
         slider.innerHTML = dark_slider
     }
 
     var toggleSwitch = document.querySelector(".theme-switch input")
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "light") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        toggleSwitch.checked = true
+    }
     function switchTheme(e) {
         if (e.target.checked) {
             document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem("theme", "light")
         }
         else {
             document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem("theme", "dark")
         }    
     }
     if (toggleSwitch) {
