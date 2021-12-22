@@ -37,6 +37,9 @@ footer = `
 <div class="footer">
     <p><small>adapted from the <a href="https://github.com/orderedlist/minimal">minimal theme</a>
     </small></p>
+</div>
+<div class="footer-wave">
+<img src="assets/waves.svg" alt="Waves" width="100%" height="20%" />
 </div>`;
 
 dark_slider = `
@@ -64,16 +67,16 @@ window.onload = function (){
     var toggleSwitch = document.querySelector(".theme-switch input")
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "light") {
-        document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'light');
         toggleSwitch.checked = true
     }
     function switchTheme(e) {
         if (e.target.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem("theme", "light")
         }
         else {
-            document.documentElement.setAttribute('data-theme', 'light');
+            document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem("theme", "dark")
         }    
     }

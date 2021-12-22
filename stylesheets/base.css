@@ -1,7 +1,8 @@
 :root {
   --bg-color: #000;
-  --heading-color: #39c;
-  --text-color: rgb(29, 123, 170);
+  --heading-color: rgb(97, 185, 230);
+  --text-color: rgb(86, 170, 212);
+  --aux-color: rgb(33, 33, 97);
   --jp-content-font-color1: rgba(255, 255, 255, 1);
   --jp-layout-color2: #424242;
 }
@@ -11,9 +12,12 @@
   padding: 0;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
   --bg-color: #fff;
-  --heading-color: #818cab;
+  /* /* --heading-color: #818cab; */
+  --heading-color: rgb(0, 29, 32);
+  --text-color: rgb(0, 82, 122);
+  --aux-color: rgb(35, 35, 87);
   --jp-content-font-color1: rgb(f, f, f);
   --jp-layout-color2: #e0e0e0;
 }
