@@ -38,9 +38,9 @@ footer = `
     <p><small>adapted from the <a href="https://github.com/orderedlist/minimal">minimal theme</a>
     </small></p>
 </div>
-<div class="footer-wave">
+<!-- <div class="footer-wave">
 <img src="assets/waves.svg" alt="Waves" width="100%" height="20%" />
-</div>`;
+</div> -->`;
 
 dark_slider = `
 <div class="theme-switch-wrapper">
