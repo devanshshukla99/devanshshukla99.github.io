@@ -44,7 +44,7 @@ Preprints
 
 .. include:: projects.rst
 
-.. _`this link`: https://devanshshukla99.github.io
+.. _`this link`: https://devanshshukla99.github.io/assets/cv_devanshshukla99.pdf
 
 
  .. toctree::
