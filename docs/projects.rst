@@ -11,9 +11,9 @@ Projects
 
     .. grid-item::
         .. card:: 2. Vela Pulsar data Analysis
-            :link: /assets/projects/Vela_Analysis.html
+            :link: _static/Vela_Analysis.html
 
 
     .. grid-item::
         .. card:: 3. Lecture notes on General Relativity
-            :link: /assets/projects/gr_notes.html
+            :link: _static/gr.pdf
